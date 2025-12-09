@@ -43,7 +43,3 @@ const team = ref<Member[]>([
 ])
 </script>
 
-<style scoped>
-/* pequeños ajustes opcionales */
-h2 { color: #0277bd; }
-</style>
