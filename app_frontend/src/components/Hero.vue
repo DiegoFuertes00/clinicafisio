@@ -1,51 +1,43 @@
 <template>
-  <div class="hero">
-    <!-- Imagen de fondo -->
-    <img class="hero-image" :src="heroImage" alt="Hero Clínica" />
-  
-   
-    <!-- Contenido centrado -->
-    <div class="hero-content text-center">
-      <h1 class="display-4 fw-bold">Recupera tu bienestar con nosotros</h1>
-      <p class="lead mb-4">
-        <strong>En Clínica LeonFisio te ayudamos a volver a moverte sin dolor.</strong>
+  <section class="hero">
+    <img
+      class="hero-image"
+      :src="heroImage"
+      alt="Paciente recibiendo tratamiento de fisioterapia"
+    />
+
+    <div class="hero-content">
+      <span class="hero-badge">
+        Clínica de fisioterapia en León
+      </span>
+
+      <h1 class="hero-title">
+        Recupera tu movilidad, recupera tu vida.
+      </h1>
+
+      <p class="hero-subtitle">
+        En <strong>Clínica LeonFisio</strong> te acompañamos en todo el proceso de recuperación
+        con tratamientos personalizados y un equipo especializado en fisioterapia deportiva y del día a día.
       </p>
-      <router-link to="/contact" class="btn btn-primary btn-lg">
-        Reserva tu cita
-      </router-link>
+
+      <div class="d-flex flex-wrap align-items-center gap-3 mt-3">
+        <router-link to="/contact" class="btn btn-primary btn-lg">
+          Reserva tu cita
+        </router-link>
+        <router-link to="/services" class="btn btn-outline-primary btn-lg">
+          Ver tratamientos
+        </router-link>
+      </div>
+
+      <p class="hero-note">
+        Primera valoración gratuita de 15 minutos para nuevos pacientes.
+      </p>  
     </div>
-  </div>
+  </section>
 </template>
 
 <script setup lang="ts">
 import heroImage from '@/assets/fisioterapia-deportiva.jpg' 
 </script>
 
-<style scoped>
-.hero {
-  position: relative;
-  width: 100%;
-  height: 80vh; /* altura del hero */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
 
-.hero-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* la imagen cubre toda la sección */
-  z-index: 0;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  color: black; /* texto negro */
-  padding: 0 15px;
-}
-</style>

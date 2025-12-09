@@ -1,9 +1,9 @@
 <template>
   <div class="col-md-3">
-    <div class="card border-0 shadow-sm">
+    <div class="card card-leon h-100">
       <div class="card-body">
         <h5 class="card-title mb-1">{{ name }}</h5>
-        <p class="text-muted small mb-0">{{ role }}</p>
+        <p class="text-muted small mb-1">{{ role }}</p>
         <p class="text-muted small mb-0">{{ description }}</p>
       </div>
     </div>
