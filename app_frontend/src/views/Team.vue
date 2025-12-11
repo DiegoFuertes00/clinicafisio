@@ -1,21 +1,25 @@
 <template>
   <HeaderComp />
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
-  <!-- Equipo -->
-  <section class="py-5">
-    <div class="container text-center">
-      <h2 class="mb-4 fw-bold">Nuestro Equipo</h2>
-      <div class="row justify-content-center g-4">
-        <Worker
-          v-for="member in team"
-          :key="member.name"
-          :name="member.name"
-          :role="member.role"
-          :description="member.description"
-        />
+  <main id="main-content">
+    <!-- Equipo -->
+    <section class="py-5">
+      <div class="container text-center">
+        <h1 class="mb-4 fw-bold">Nuestro Equipo</h1>
+        <div class="row justify-content-center g-4" role="list">
+          <Worker
+            v-for="member in team"
+            :key="member.name"
+            :name="member.name"
+            :role="member.role"
+            :description="member.description"
+            role="listitem"
+          />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 </template>
 
 <script setup lang="ts">
