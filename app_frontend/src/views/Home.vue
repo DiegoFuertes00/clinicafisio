@@ -1,10 +1,9 @@
 <template>
-    <HeaderComp></HeaderComp>
-  <div class="home">
+  <HeaderComp></HeaderComp>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+  <main id="main-content" class="home">
     <Hero></Hero>
-   
-  </div>
- 
+  </main>
 </template>
 
 <script setup>

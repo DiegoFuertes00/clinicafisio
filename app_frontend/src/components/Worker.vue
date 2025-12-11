@@ -1,12 +1,12 @@
 <template>
   <div class="col-md-3">
-    <div class="card card-leon h-100">
+    <article class="card card-leon h-100" tabindex="0">
       <div class="card-body">
-        <h5 class="card-title mb-1">{{ name }}</h5>
+        <h3 class="card-title mb-1 h5">{{ name }}</h3>
         <p class="text-muted small mb-1">{{ role }}</p>
         <p class="text-muted small mb-0">{{ description }}</p>
       </div>
-    </div>
+    </article>
   </div>
 </template>
 
