@@ -9,9 +9,14 @@ const router = createRouter({
       component: ()=> import ('@/views/Home.vue')
     },
     {
-      path:'/contact',
-      name:'ContactUs',
-      component: ()=> import ('@/views/Contact.vue'),
+      path:'/login',
+      name:'Login',
+      component: ()=> import ('@/views/Login.vue'),
+    },
+    {
+      path:'/loginWorkers',
+      name:'LoginWorkers',
+      component: ()=> import ('@/views/LoginWorkers.vue'),
     },
     {
       path:'/services',
@@ -22,7 +27,17 @@ const router = createRouter({
       path:'/team',
       name:'Team',
       component: ()=> import ('@/views/Team.vue'),
-    }
+    },
+     {
+      path:'/clients',
+      name:'Clients',
+      component: ()=> import ('@/views/Clients.vue'),
+    },
+     {
+      path:'/workers',
+      name:'Workers',
+      component: ()=> import ('@/views/Workers.vue'),
+    },
   ],
 })
 

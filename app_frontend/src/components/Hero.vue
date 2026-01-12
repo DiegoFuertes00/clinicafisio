@@ -21,7 +21,7 @@
       </p>
 
       <div class="d-flex flex-wrap align-items-center gap-3 mt-3">
-        <router-link to="/contact" class="btn btn-primary btn-lg" aria-label="Reserva tu cita con nosotros">
+        <router-link to="/login" class="btn btn-primary btn-lg" aria-label="Reserva tu cita con nosotros">
           Reserva tu cita
         </router-link>
         <router-link to="/services" class="btn btn-outline-primary btn-lg" aria-label="Ver todos nuestros tratamientos">
