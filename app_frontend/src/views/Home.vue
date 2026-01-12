@@ -212,20 +212,102 @@ import heroImage from '@/assets/fisioterapia-deportiva.jpg'
   font-weight: 600;
 }
 
-/* ===== RESEÑAS · OPCIÓN 3 ===== */
+/* ===== SECCIÓN CLÍNICA (adaptada a tema) ===== */
+
+.clinic-section {
+  background: linear-gradient(
+    180deg,
+    rgba(15, 159, 174, 0.08),
+    rgba(31, 59, 114, 0.06)
+  );
+  padding: 6rem 0;
+}
+
+.clinic-section .container {
+  background: var(--color-surface);
+  border-radius: 1.5rem;
+  padding: 4rem 3rem;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--color-border);
+}
+
+.clinic-placeholder {
+  height: 240px;
+  border-radius: 1rem;
+  border: 2px dashed rgba(15, 159, 174, 0.35);
+  background: rgba(15, 159, 174, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-text);
+}
+
+/* ===== SECCIÓN RESEÑAS (adaptada a tema) ===== */
 
 .reviews-section {
-  background: #eef6fa;
-  padding: 5rem 0;
+  background: linear-gradient(
+    180deg,
+    rgba(31, 59, 114, 0.05),
+    rgba(15, 159, 174, 0.05)
+  );
+  padding: 5rem 0 6rem;
+  border-top: 1px solid rgba(31, 59, 114, 0.12);
 }
 
 .review-card {
-  background: #ffffff;
+  background: var(--color-surface);
   border-radius: 1rem;
   padding: 1.75rem;
+
+  /* borde azul discreto en ambos temas */
+  border: 1px solid rgba(31, 59, 114, 0.18);
+
+  /* detalle lateral que ya tenías, pero mejor en dark */
   border-left: 6px solid var(--color-primary);
-  box-shadow: 0 16px 40px rgba(31, 59, 114, 0.25);
+
+  box-shadow: var(--shadow-card);
 }
+
+.review-text {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.review-author {
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+
+[data-theme="dark"] .clinic-section {
+  background: linear-gradient(
+    180deg,
+    rgba(18, 184, 201, 0.10),
+    rgba(74, 144, 226, 0.06)
+  );
+}
+
+[data-theme="dark"] .clinic-placeholder {
+  background: rgba(18, 184, 201, 0.08);
+  border-color: rgba(18, 184, 201, 0.35);
+}
+
+[data-theme="dark"] .reviews-section {
+  background: linear-gradient(
+    180deg,
+    rgba(37, 43, 59, 0.30),
+    rgba(26, 31, 46, 0.35)
+  );
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .review-card {
+  border-color: rgba(255, 255, 255, 0.10);
+}
+
 
 
 </style>
