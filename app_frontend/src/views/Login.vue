@@ -133,9 +133,9 @@
             </div>
           </section>
 
-          <p class="text-center text-muted mt-3 mb-0 small">
+          <!-- <p class="text-center text-muted mt-3 mb-0 small">
             Demo · usuario: <strong>pepe</strong> · contraseña: <strong>1234</strong>
-          </p>
+          </p> -->
         </div>
       </div>
     </div>

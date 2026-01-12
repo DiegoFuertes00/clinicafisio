@@ -272,11 +272,11 @@ const agendaFiltrada = computed(() =>
 )
 
 function marcarRealizada(index: number) {
-  agendaFiltrada.value[index].estado = 'realizada'
+  
 }
 
 function cancelarCita(index: number) {
-  agendaFiltrada.value[index].estado = 'cancelada'
+
 }
 
 /* CURSOS */
